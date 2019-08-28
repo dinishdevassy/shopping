@@ -86,6 +86,7 @@
                 <div class="container">
                     <div class="cart_inner">
                         <div class="table-responsive">
+                            <a class="text-right button button-login " href="/product/view">Continue Shopping</a>
                             <table class="table">
                                 <thead>
                                     <tr>
@@ -101,7 +102,7 @@
                                         <td>
                                             <div class="media">
                                                 <div class="d-flex">
-                                                    <img src="http://localhost:8080/product/view/<%= cartoutput[i].image%>" alt="">
+                                                    <img class="rounded-circle mx-auto border border-primary" src="http://localhost:8080/product/view/<%= cartoutput[i].image%>" alt="">
                                                 </div>
                                                 <div class="media-body">
                                                     <p><%= cartoutput[i].pname %></p>
@@ -109,7 +110,7 @@
                                             </div>
                                         </td>
                                         <td>
-                                            <h5>₹<%= cartoutput[i].price %></h5>
+                                            <h5>₹ <%= cartoutput[i].price %></h5>
                                         </td>
                                         <td>
                                             <div class="product_count">
@@ -123,6 +124,9 @@
                                         </td>
                                         <td>
                                             <h5>₹<%= cartoutput[i].total %></h5>
+                                        </td>
+                                        <td>
+                                          <a class="text-left button button-login" href="/product/remove/<%=cartoutput[i].cartid%>">Remove</a>
                                         </td>
                                     </tr>
                                     <% }%>

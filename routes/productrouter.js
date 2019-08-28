@@ -76,6 +76,16 @@ router.get("/view",function(req,res){
         }
     })
 })
+
+router.get("/remove/:rid",function(req,res){
+    const rid=req.params.rid;
+    cart.remove({cartid:rid},function(err,result){
+        if (err) throw err;
+        else{
+            res.redirect("/product/cart");
+        }
+        });
+})
     
     router.get("/addtocart/:id",function(req,res){
         console.log(req.params.id);
