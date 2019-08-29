@@ -77,13 +77,13 @@
             <% for(var i=0;i<productoutput.length;i++) {%>
               <div class="col col-4 col-md-4">
               <div class="card" >
-                  <img class="rounded-circle mx-auto border border-primary" src="http://localhost:8080/product/view/<%= productoutput[i].image%>"   height="300px" width="300px">
+                  <img class="rounded-circle mx-auto border border-primary" src="/product/view/<%= productoutput[i].image%>"   height="300px" width="300px">
                   <h4 class="card-title text-center" style="font-family: Cambria " ><%= productoutput[i].pname%></h4>
                     <div class="card-body">
                       <h6 class="card-text text-center" style="font-family: Cambria">Brand : <%= productoutput[i].brand%></h6>
                       <h6 class="card-text text-center"style="font-family: Cambria">price : ₹ <%= productoutput[i].price%>.00</h6>
                       <h6 class="card-text text-center"style="font-family: Cambria">10% Discount</h6>
-                        <a class="text-left button button-header " href=">">Edit</a>
+                        <a class="text-left button button-header " href="/product/manage">Edit</a>
                         <a class="text-right button button-header" href="/product/deleteproduct/<%=productoutput[i].pid%>">Delete</a>
                   </div>
                 </div>
