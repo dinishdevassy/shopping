@@ -35,7 +35,7 @@ router.post("/login",function(req,res)
             if(result.length==0)
             res.redirect("/index")
             else
-            res.redirect("/user/productdetails");
+            res.redirect("/product/view");
         }
     })
 })

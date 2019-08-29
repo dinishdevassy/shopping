@@ -76,6 +76,26 @@ router.get("/view",function(req,res){
         }
     })
 })
+router.get("/manage",function(req,res){
+    product.find({},function(err,result){
+        if (err) throw err;
+        else{
+            //console.log(result)
+            res.render("manageproduct",{productoutput:result});
+        }
+    })
+})
+
+router.get("/deleteproduct/:rid",function(req,res){
+    const productid=req.params.rid;
+    product.remove({pid:productid},function(err,result){
+        console.log(result);
+        if (err) throw err;
+        else{
+            res.redirect("/product/manage");
+        }
+        });
+})
 
 router.get("/remove/:rid",function(req,res){
     const rid=req.params.rid;

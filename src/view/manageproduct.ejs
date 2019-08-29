@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Aroma Shop - Home</title>
-	<link rel="icon" href="img/Fevicon.png" type="image/png">
+  <link rel="icon" href="img/Fevicon.png" type="image/png">
+  <base href="/">
   <link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
 	<link rel="stylesheet" href="vendors/themify-icons/themify-icons.css">
@@ -13,11 +14,12 @@
   <link rel="stylesheet" href="vendors/owl-carousel/owl.theme.default.min.css">
   <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
+  
 </head>
 <body>
-    <!--================ Start Header Menu Area =================-->
-	<header class="header_area">
+   <!--================ Start Header Menu Area =================-->
+   <header class="header_area">
     <div class="main_menu">
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
@@ -31,10 +33,12 @@
           <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
             <ul class="nav navbar-nav menu_nav ml-auto mr-auto">
               <li class="nav-item active"><a class="nav-link" href="index">Home</a></li>
-              <!-- <li class="nav-item"><a class="nav-link" href="/product">Add Product</a></li>
+              <li class="nav-item"><a class="nav-link" href="/product">Add Product</a></li>
+              <li class="nav-item"><a class="nav-link" href="/product/manage">Manage Product</a></li>
               <li class="nav-item"><a class="nav-link" href="/product/view">Products</a></li>
-              <li class="nav-item"><a class="nav-link" href="product/cart">Cart</a></li> -->
-              <li class="nav-item"><a class="nav-link" href="register">Contact</a></li>
+              <li class="nav-item"><a class="nav-link" href="product/cart">Cart</a></li>
+              <li class="nav-item"><a class="nav-link" href="/product/manage">Contact</a></li>
+              <li class="nav-item"><a class="nav-link" href="index">LogOut</a></li>
             </ul>
             <ul class="nav-shop">
               <li class="nav-item"><button><i class="ti-search"></i></button></li>
@@ -47,82 +51,49 @@
     </div>
   </header>
 	<!--================ End Header Menu Area =================-->
-
-  <main class="site-main">
-    
-    <!--================ Hero banner start =================-->
-    <section class="hero-banner">
+  
+  <!--================    Offer  Section =================-->
+  <section class="offer" id="parallax-1" data-anchor-target="#parallax-1" data-300-top="background-position: 20px 30px" data-top-bottom="background-position: 0 20px">
       <div class="container">
-        <div class="row no-gutters align-items-center pt-60px">
-          <div class="col-5 d-none d-sm-block">
-            <div class="hero-banner__img">
-              <img class="img-fluid" src="img/home/hero-banner.png" alt="">
+        <div class="row">
+          <div class="col-xl-5">
+            <div class="offer__content text-center">
+              <h3>Up To 50% Off</h3>
+              <h4>Winter Sale</h4>
+              <p>Him she'd let them sixth saw light</p>
+              <a class="button button--active mt-3 mt-xl-4" href="#">Shop Now</a>
             </div>
-          </div>
-          <div class="col-sm-7 col-lg-6 offset-lg-1 pl-4 pl-md-5 pl-lg-0">
-            <!-- <div class="hero-banner__content">
-              <h4>Shop is fun</h4>
-              <h1>Browse Our Premium Product</h1>
-              <p>Us which over of signs divide dominion deep fill bring they're meat beho upon own earth without morning over third. Their male dry. They are great appear whose land fly grass.</p>
-              <a class="button button-hero" href="#">Browse Now</a>
-            </div>-->
-
-            <!-- login starts here -->
-            <div class="login_form_inner register_form_inner">
-              <h3>Create account</h3>
-              <form class="row login_form" action="/user/newuser" method="post" id="register_form" >
-                <div class="col-md-12 form-group">
-                  <input type="text" class="form-control" id="uname" name="uname" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'" required>
-                </div>
-                <div class="col-md-12 form-group">
-                  <input type="text" class="form-control" id="email" name="email" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'" required>
-                </div>
-                <div class="col-md-12 form-group">
-                  <input type="password" class="form-control" id="pswd" name="pswd" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'" required>
-                </div>
-                <div class="col-md-12 form-group">
-                  <input type="password" class="form-control" id="cpswd" name="cpswd" placeholder="Confirm Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Confirm Password'" required>
-                </div>
-                <div class="col-md-12 form-group">
-                  <select name="role" id="role" name="role" class="form-control" required>
-                    <option value="admin">Admin</option>
-                    <option  value="user">User</option>
-                  </select>
-                </div>
-                <div class="col-md-12 form-group">
-                  <div class="creat_account">
-                    <input type="checkbox" id="f-option2" name="selector">
-                    <label for="f-option2">Keep me logged in</label>
-                  </div>
-                </div>
-                <div class="col-md-12 form-group">
-                  <button type="submit" value="submit" class="button button-register w-100">Register</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-
-            
-                
-            </div>
-        </div>
-    
-    <!-- login ends here -->
-
           </div>
         </div>
       </div>
     </section>
-    <!--================ Hero banner start =================-->
+<br>
+  <!--================    Discount Section =================-->
 
-
-
-    <!-- ================ Best Selling item  carousel ================= --> 
+    <div class="container">
+      <form >
+      <div class="row">
+            <br>
+            <% for(var i=0;i<productoutput.length;i++) {%>
+              <div class="col col-4 col-md-4">
+              <div class="card" >
+                  <img class="rounded-circle mx-auto border border-primary" src="http://localhost:8080/product/view/<%= productoutput[i].image%>"   height="300px" width="300px">
+                  <h4 class="card-title text-center" style="font-family: Cambria " ><%= productoutput[i].pname%></h4>
+                    <div class="card-body">
+                      <h6 class="card-text text-center" style="font-family: Cambria">Brand : <%= productoutput[i].brand%></h6>
+                      <h6 class="card-text text-center"style="font-family: Cambria">price : ₹ <%= productoutput[i].price%>.00</h6>
+                      <h6 class="card-text text-center"style="font-family: Cambria">10% Discount</h6>
+                        <a class="text-left button button-header " href=">">Edit</a>
+                        <a class="text-right button button-header" href="/product/deleteproduct/<%=productoutput[i].pid%>">Delete</a>
+                  </div>
+                </div>
+                <hr>
+              </div>
+                <%}%>
+      </div>
+    </form>
+    </div>
     
-
-
-
   <!--================ Start footer Area  =================-->	
 	<footer class="footer">
 		<div class="footer-area">
@@ -141,7 +112,7 @@
 						</div>
 					</div>
 					
-					
+				
 					<div class="offset-lg-1 col-lg-3 col-md-6 col-sm-6">
 						<div class="single-footer-widget tp_widgets">
 							<h4 class="footer_title">Contact Us</h4>
